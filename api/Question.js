@@ -9,7 +9,7 @@ var answers = function(params) {
     params = {
       token: arguments[0],
       offset: arguments[1] || 0,
-      // pagesize: arguments[2] || 10,
+      pagesize: arguments[2] || 10,
     };
   }
 
@@ -19,8 +19,8 @@ var answers = function(params) {
       method: 'next',
       params: JSON.stringify({
         'url_token': params.token,
-        'pagesize': params.pagesize,
-        'offset': 10, // params.offset,
+        'pagesize': params.pagesize || 10,
+        'offset': params.offset || 0
       })
     },
     method: 'POST',
