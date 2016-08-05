@@ -2,9 +2,7 @@
 
 > 知乎已经更新为 https, 本项目 \< 1.0.0 不能再使用了. 请升级
 
-[![](https://nodei.co/npm/zhihu.png?downloads=true)](https://nodei.co/npm/zhihu/)
-
-[![](https://travis-ci.org/iplus26/zhihu.svg)](https://travis-ci.org/iplus26/zhihu/builds)
+[![](https://nodei.co/npm/zhihu2.png?downloads=true)](https://nodei.co/npm/zhihu/)
 
 根据这些接口获取到知乎的数据，包括以下接口：
 
@@ -21,7 +19,7 @@
 [DEMO](https://tonicdev.com/shanelau/575696208b908f1300212fff)
 
 ```javascript
-var zhihu = require('zhihu');
+var zhihu = require('zhihu2');
 
 var username = 'shanejs';
     
@@ -49,7 +47,7 @@ zhihu.User.info(username).then(function(user){
 比如请求这个用户 shanelau ([zhihu.com/people/shanelau](https://www.zhihu.com/people/shanelau)): 
 
 ```javascript
-var zhihu = require('zhihu');
+var zhihu = require('zhihu2');
 var name = 'shanelau';
 	
 zhihu.User.info(name).then(function(user){
@@ -209,7 +207,7 @@ zhihu.com/answer/12306/voters_profile
 获取该问题的回答列表
 
 ```javascript
-var Question = require('zhihu').Question;
+var Question = require('zhihu2').Question;
 
 Question.answers('19557271');
 Question.answers('19557271', 10); // start from 10
